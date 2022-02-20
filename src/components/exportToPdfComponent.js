@@ -1,17 +1,8 @@
-import React ,{useRef }from 'react';
-import jsPDF from 'jspdf';
-import QuotationList from '../containers/qotationList';
-import html2canvas from "html2canvas";
-
+import React from 'react';
+import Button from "react-bootstrap/Button";
 const ExportPdfComponent = (props) => {
-
-
-
-      return (
-        <div>
-          <button className="btn btn-primary"  onClick={props.printDocument}>Print to PDF!</button>
-        </div>
-      );
+  return (
+      <Button  variant="info" className="ml-3 mb-3"  onClick={props.printDocument}>Print to PDF!</Button>
+  );
 }
- 
 export default ExportPdfComponent;

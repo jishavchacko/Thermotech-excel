@@ -1,10 +1,19 @@
 import React from "react";
-import  PageHeader from "react-bootstrap/PageHeader";
+import  Navbar from "react-bootstrap/Navbar";
+import  Container from "react-bootstrap/Container";
 const Header = () => {
-return(
-<PageHeader>
-  Example page header <small>Subtext for header</small>
-</PageHeader>
-)
+	return(
+		<Navbar>
+			<Container>
+				<Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
+				<Navbar.Toggle />
+				<Navbar.Collapse className="justify-content-end">
+					<Navbar.Text>
+						Signed in as: <a href="#login">Mark Otto</a>
+					</Navbar.Text>
+				</Navbar.Collapse>
+			</Container>
+		</Navbar>
+	)
 };
 export default Header;
